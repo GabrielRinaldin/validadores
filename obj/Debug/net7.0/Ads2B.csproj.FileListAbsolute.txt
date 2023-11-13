@@ -1,0 +1,14 @@
+D:\Projetos C#\Ads2B\bin\Debug\net7.0\Ads2B.exe
+D:\Projetos C#\Ads2B\bin\Debug\net7.0\Ads2B.deps.json
+D:\Projetos C#\Ads2B\bin\Debug\net7.0\Ads2B.runtimeconfig.json
+D:\Projetos C#\Ads2B\bin\Debug\net7.0\Ads2B.dll
+D:\Projetos C#\Ads2B\bin\Debug\net7.0\Ads2B.pdb
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.AssemblyInfoInputs.cache
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.AssemblyInfo.cs
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.csproj.CoreCompileInputs.cache
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.dll
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\refint\Ads2B.dll
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.pdb
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\Ads2B.genruntimeconfig.cache
+D:\Projetos C#\Ads2B\obj\Debug\net7.0\ref\Ads2B.dll
