@@ -1,0 +1,14 @@
+D:\Projetos C#\validadores-c-\bin\Debug\net7.0\validadores-c-.exe
+D:\Projetos C#\validadores-c-\bin\Debug\net7.0\validadores-c-.deps.json
+D:\Projetos C#\validadores-c-\bin\Debug\net7.0\validadores-c-.runtimeconfig.json
+D:\Projetos C#\validadores-c-\bin\Debug\net7.0\validadores-c-.dll
+D:\Projetos C#\validadores-c-\bin\Debug\net7.0\validadores-c-.pdb
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.AssemblyInfoInputs.cache
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.AssemblyInfo.cs
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.csproj.CoreCompileInputs.cache
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.dll
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\refint\validadores-c-.dll
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.pdb
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\validadores-c-.genruntimeconfig.cache
+D:\Projetos C#\validadores-c-\obj\Debug\net7.0\ref\validadores-c-.dll

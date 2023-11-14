@@ -4,6 +4,7 @@ public class TituloEleitor : Documento
 
     public TituloEleitor(string numeroDoDocumento) : base(numeroDoDocumento)
     {
+        Tipo = "TituloEleitor";
         digito1 = new int[8] { 2, 3, 4, 5, 6, 7, 8, 9 };
         digito2 = new int[3] { 7, 8, 9 };
     }

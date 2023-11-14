@@ -1,5 +1,6 @@
 public class Documento
 {
+    public string Tipo = "Documento";
     protected string numeroDoDocumento;
     protected int[] digito1;
     protected int[] digito2;
