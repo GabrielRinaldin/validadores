@@ -5,18 +5,10 @@ class Program
 {
     static void Main()
     {
-
-        /**
-Quantidade de Digitos minimo:
-CPF 9-11
-Cnpj 12-14
-InscricaoEstadual 8-10
-Pis 10-11
-Titulo 10-12
-*/
-
-        Testar("582.294.150");
-        Testar("95.702.139/0001");
+        // Testar("582.294.150");
+        // Testar("920.679.710-77");
+        // Testar("95.702.139/0001");
+        Testar("10.198.363/0001-37");
     }
 
     static void Testar(string numeroDoDocumento, string? tipoDocumento = null)
