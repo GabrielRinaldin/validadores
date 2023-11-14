@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Ads2B")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("validadores-c-")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Ads2B")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Ads2B")]
+[assembly: System.Reflection.AssemblyProductAttribute("validadores-c-")]
+[assembly: System.Reflection.AssemblyTitleAttribute("validadores-c-")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

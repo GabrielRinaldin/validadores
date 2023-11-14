@@ -1,0 +1,15 @@
+C:\Users\2019101628\Documents\validadores-c-\bin\Debug\net6.0\validadores-c-.exe
+C:\Users\2019101628\Documents\validadores-c-\bin\Debug\net6.0\validadores-c-.deps.json
+C:\Users\2019101628\Documents\validadores-c-\bin\Debug\net6.0\validadores-c-.runtimeconfig.json
+C:\Users\2019101628\Documents\validadores-c-\bin\Debug\net6.0\validadores-c-.dll
+C:\Users\2019101628\Documents\validadores-c-\bin\Debug\net6.0\validadores-c-.pdb
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.csproj.AssemblyReference.cache
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.AssemblyInfoInputs.cache
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.AssemblyInfo.cs
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.csproj.CoreCompileInputs.cache
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.dll
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\refint\validadores-c-.dll
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.pdb
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\validadores-c-.genruntimeconfig.cache
+C:\Users\2019101628\Documents\validadores-c-\obj\Debug\net6.0\ref\validadores-c-.dll
