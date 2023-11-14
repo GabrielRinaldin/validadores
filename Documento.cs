@@ -1,14 +1,14 @@
 public class Documento
 {
     public string Tipo = "Documento";
-    protected string numeroDoDocumento;
+    public string numeroDoDocumento;
     protected int[] digito1;
     protected int[] digito2;
-    protected virtual int TamanhoMaximo => int.MaxValue;
+    public int TamanhoMaximo;
 
     public Documento(string numeroDoDocumento)
     {
-        this.numeroDoDocumento = numeroDoDocumento.Trim().Replace(".", "").Replace("-", "").Replace("/", "");
+        this.numeroDoDocumento = numeroDoDocumento;
         this.digito1 = new int[0] { };
         this.digito2 = new int[0] { };
     }

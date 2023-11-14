@@ -5,38 +5,63 @@ class Program
 {
     static void Main()
     {
-        Testar();
+
+        /**
+Quantidade de Digitos minimo:
+CPF 9-11
+Cnpj 12-14
+InscricaoEstadual 8-10
+Pis 10-11
+Titulo 10-12
+*/
+
+        Testar("582.294.150");
+        Testar("95.702.139/0001");
     }
 
-    static void Testar()
+    static void Testar(string numeroDoDocumento, string? tipoDocumento = null)
     {
-        string numeroDoDocumento = "073130709";
+        numeroDoDocumento = numeroDoDocumento.Trim().Replace(".", "").Replace("-", "").Replace("/", "");
 
-        Dictionary<int, Func<string, Documento>> DocumentosValidados = new Dictionary<int, Func<string, Documento>>
+        Dictionary<string, Func<string, Documento>> DocumentosValidados = new Dictionary<string, Func<string, Documento>>
         {
-            { 9, value => new Cpf(value) },
-            { 14, value => new Cnpj(value) }
+            { "9", value => new Cpf(value) },
+            { "11", value => new Cpf(value) },
+            { "Cpf", value => new Cpf(value) },
+
+            { "12", value => new Cnpj(value) },
+            { "14", value => new Cnpj(value) },
+            { "Cnpj", value => new Cnpj(value) },
+
+            { "8", value => new InscricaoEstadualParana(value) },
+            { "10", value => new InscricaoEstadualParana(value) },
+            { "InscricaoEstadualParana", value => new InscricaoEstadualParana(value) },
+
+            { "Pis", value => new Pis(value) },
+            { "Titulo", value => new Pis(value) },
         };
 
-        if (DocumentosValidados.TryGetValue(numeroDoDocumento.Length, out var criarDocumento))
-        {
-            try
-            {
-                Documento documento = criarDocumento(numeroDoDocumento);
+        string tipoDeBusca = tipoDocumento == null ? numeroDoDocumento.Length.ToString() : tipoDocumento;
 
+        if (DocumentosValidados.TryGetValue(tipoDeBusca, out var criarDocumento))
+        {
+            Documento documento = criarDocumento(numeroDoDocumento);
+
+            if (documento.numeroDoDocumento.Length < documento.TamanhoMaximo)
+            {
                 documento.CalcularDigitoVerificador();
-                Console.WriteLine($"{documento.Tipo}: {documento.ObterDocumentoCompleto()}");
-                Console.WriteLine($"{documento.Tipo} formatado: {documento.ObterDocumentoFormatado()}");
+            }
+            else
+            {
                 Console.WriteLine($"{documento.Tipo} válido: {documento.ValidarDocumento()}");
             }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Erro: {ex.Message}");
-            }
+
+            Console.WriteLine($"{documento.Tipo}: {documento.ObterDocumentoCompleto()}");
+            Console.WriteLine($"{documento.Tipo} formatado: {documento.ObterDocumentoFormatado()}");
         }
         else
         {
-            Console.WriteLine($"Não há classe associada ao tamanho do documento {numeroDoDocumento.Length}");
+            Console.WriteLine($"Não há classe associada ao tipo de documento {tipoDocumento}");
         }
     }
 }

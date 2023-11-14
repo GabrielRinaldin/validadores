@@ -1,10 +1,10 @@
 public class TituloEleitor : Documento
 {
-    protected override int TamanhoMaximo => 12;
 
     public TituloEleitor(string numeroDoDocumento) : base(numeroDoDocumento)
     {
         Tipo = "TituloEleitor";
+        TamanhoMaximo = 12;
         digito1 = new int[8] { 2, 3, 4, 5, 6, 7, 8, 9 };
         digito2 = new int[3] { 7, 8, 9 };
     }
