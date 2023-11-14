@@ -25,16 +25,7 @@ public class TituloEleitor : Documento
 
         int resto = soma % 11;
 
-        string digito;
-
-        if (uf == "01" || uf == "02")
-        {
-            digito = resto == 0 ? "1" : (11 - resto).ToString();
-        }
-        else
-        {
-            digito = resto < 2 ? "0" : (11 - resto).ToString();
-        }
+        string digito = resto == 10 ? "0" : resto.ToString();
 
         documento += digito;
 
@@ -47,14 +38,7 @@ public class TituloEleitor : Documento
 
         resto = soma % 11;
 
-        if (uf == "01" || uf == "02")
-        {
-            digito = resto == 0 ? "1" : (11 - resto).ToString();
-        }
-        else
-        {
-            digito = resto < 2 ? "0" : (11 - resto).ToString();
-        }
+        digito += resto == 10 ? "0" : resto.ToString();
 
         numeroDoDocumento += digito;
     }
@@ -76,33 +60,20 @@ public class TituloEleitor : Documento
 
         int resto = soma % 11;
 
-        string digito;
+        string digito = resto == 10 ? "0" : resto.ToString();
 
-        if (uf == "01" || uf == "02")
-        {
-            digito = resto == 0 ? "1" : (11 - resto).ToString();
-        }
-        else
-        {
-            digito = resto < 2 ? "0" : (11 - resto).ToString();
-        }
         documento += digito;
 
         soma = 0;
 
+        string ultimosTresDigitos = documento.Substring(8);
+
         for (int i = 0; i < digito2.Length; i++)
-            soma += int.Parse(documento[i].ToString()) * digito2[i];
+            soma += int.Parse(ultimosTresDigitos[i].ToString()) * digito2[i];
 
         resto = soma % 11;
 
-        if (uf == "01" || uf == "02")
-        {
-            digito = resto == 0 ? "1" : (11 - resto).ToString();
-        }
-        else
-        {
-            digito = resto < 2 ? "0" : (11 - resto).ToString();
-        }
+        digito += resto == 10 ? "0" : resto.ToString();
 
         return numeroDoDocumento.EndsWith(digito);
 

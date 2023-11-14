@@ -78,7 +78,7 @@
     {
         try
         {
-            TituloEleitor titulo = new TituloEleitor("3236657206");
+            TituloEleitor titulo = new TituloEleitor("7846992406");
             titulo.CalcularDigitoVerificador();
 
             Console.WriteLine($"titulo completo: {titulo.ObterDocumentoCompleto()}");
