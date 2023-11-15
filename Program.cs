@@ -5,10 +5,7 @@ class Program
 {
     static void Main()
     {
-        // Testar("582.294.150");
-        // Testar("920.679.710-77");
-        // Testar("95.702.139/0001");
-        Testar("568.894.680-66");
+        Testar("287370331201", "Titulo");
     }
 
     static void Testar(string numeroDoDocumento, string? tipoDocumento = null)
@@ -30,7 +27,7 @@ class Program
             { "InscricaoEstadualParana", value => new InscricaoEstadualParana(value) },
 
             { "Pis", value => new Pis(value) },
-            { "Titulo", value => new Pis(value) },
+            { "Titulo", value => new TituloEleitor(value) },
         };
 
         string tipoDeBusca = tipoDocumento == null ? numeroDoDocumento.Length.ToString() : tipoDocumento;
