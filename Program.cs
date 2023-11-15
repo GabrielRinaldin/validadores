@@ -8,7 +8,7 @@ class Program
         // Testar("582.294.150");
         // Testar("920.679.710-77");
         // Testar("95.702.139/0001");
-        Testar("10.198.363/0001-37");
+        Testar("568.894.680-66");
     }
 
     static void Testar(string numeroDoDocumento, string? tipoDocumento = null)

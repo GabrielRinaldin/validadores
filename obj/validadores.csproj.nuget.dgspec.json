@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos C#\\validadores-c-\\validadores-c-.csproj": {}
+    "D:\\Projetos C#\\validadores\\validadores.csproj": {}
   },
   "projects": {
-    "D:\\Projetos C#\\validadores-c-\\validadores-c-.csproj": {
+    "D:\\Projetos C#\\validadores\\validadores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos C#\\validadores-c-\\validadores-c-.csproj",
-        "projectName": "validadores-c-",
-        "projectPath": "D:\\Projetos C#\\validadores-c-\\validadores-c-.csproj",
+        "projectUniqueName": "D:\\Projetos C#\\validadores\\validadores.csproj",
+        "projectName": "validadores",
+        "projectPath": "D:\\Projetos C#\\validadores\\validadores.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos C#\\validadores-c-\\obj\\",
+        "outputPath": "D:\\Projetos C#\\validadores\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

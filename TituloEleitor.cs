@@ -9,7 +9,7 @@ public class TituloEleitor : Documento
         digito2 = new int[3] { 7, 8, 9 };
     }
 
-    public override void CalcularDigitoVerificador()
+    public override string CalcularDigitoVerificador()
     {
 
         if (numeroDoDocumento.Length > TamanhoMaximo)
@@ -41,7 +41,7 @@ public class TituloEleitor : Documento
 
         digito += resto == 10 ? "0" : resto.ToString();
 
-        numeroDoDocumento += digito;
+        return numeroDoDocumento += digito;
     }
 
     public override bool ValidarDocumento()

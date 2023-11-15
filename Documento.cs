@@ -15,7 +15,7 @@ public class Documento
         this.digito2 = new int[0] { };
     }
 
-    public virtual void CalcularDigitoVerificador()
+    public virtual string CalcularDigitoVerificador()
     {
         if (numeroDoDocumento.Length > TamanhoMaximo)
             throw new ArgumentException($"Documento deve conter {TamanhoMaximo} digitos.");
@@ -45,7 +45,7 @@ public class Documento
             digito += resto < 2 ? "0" : (11 - resto).ToString();
         }
 
-        numeroDoDocumento += digito;
+        return (numeroDoDocumento += digito).ToString();
     }
 
     public virtual bool ValidarDocumento()
