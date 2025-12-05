@@ -1,4 +1,4 @@
-# 🧩 validadoresc#
+# 🧩 validadores C#
 
 Uma pequena coleção de validadores escritos em C#, criados com foco em reutilização, legibilidade e simples integração em aplicações.
 
